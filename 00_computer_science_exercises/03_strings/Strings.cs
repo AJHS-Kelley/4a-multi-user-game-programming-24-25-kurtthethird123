@@ -1,7 +1,7 @@
 using System;
 
 class Strings {
-  0 references
+  
   static void Main() {
     // In C# ALL STRINGS MUST USE DOUBLE-QUOTES
 
@@ -16,11 +16,15 @@ class Strings {
     Console.WriteLine(greeting.Length);
     Console.WriteLine(goodbye.Length);
 
-    if (greeting.length > goodbye.Length)
+    if (greeting.Length > goodbye.Length)
     {
-       Console.Writline("The greeting has more characters than the goodbye\n");
+       Console.WriteLine("The greeting has more characters than the goodbye\n");
     }
-
+    else
+    {
+       Console.WriteLine("The goodbye has more characters than the greeting\n");
+    }
+  
     // Useful String Methods
 
     Console.WriteLine(greeting.ToUpper()); // Make entire string UPPERCASE
@@ -36,19 +40,31 @@ class Strings {
 
     // String Interpolation -- Subtracting variables into strings.
     string comboString3 = $"My greeting is {greeting} and my goodbye is {goodbye}.\n";
-    Console.Writeline(comboString3);
+    Console.WriteLine(comboString3);
 
     // Substituting Variables into Strings Method 2
-    Console.WriteLine("My greeting is" + greeting + "and my goodbye is" + goodbye + ".\n");
+    Console.WriteLine ("My greeting is " + greeting + "and my goodbye is" + goodbye);
 
     // Accessing Parts of Strings
     // index is a specific location of a character in a string
     // ALL string indexes start at 0
-    Console.Writeline(goodbye[0]); // Print the character at index 0.
-    Console.Writeline(goodbye[4]); // Replace x with what to print the 5th character
+    Console.WriteLine(goodbye[0]); // Print the character at index 0.
+    Console.WriteLine(goodbye[4]); // Replace x with what to print the 5th character
     
     // Where is it in my string?
     Console.WriteLine(greeting.IndexOf("y"));
+
+    // Finding parts of a string
+    string fullName = "Billy Mays";
+
+    // What letters?
+    int lastInitial = fullName.IndexOf("M");
+
+    // Find the substring.
+    string lastName = fullName.Substring(lastInitial);
+
+    // Print it.
+    Console.WriteLine(lastName);
 
   
   }

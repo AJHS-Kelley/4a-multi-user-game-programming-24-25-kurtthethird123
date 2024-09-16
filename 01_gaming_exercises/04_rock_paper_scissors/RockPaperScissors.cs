@@ -4,12 +4,16 @@ class Template {
   
   static void Main() {
 
-  int rock = R;
-  int paper = P;
-  int scissors = S;
+  string CPUChoice = "";
+  string numChoices = "";
+  string playerChoice = "";
+  
+  int = playerPoints;
+  int = CPUPoints;
 
-  Console.Writeline("Hello and welcome to the game!!!\n");
-  Console.Writeline("Please choose from the following\n");
+  Console.WriteLine("Hello and welcome to the game!!!\n");
+  Console.WriteLine("Please choose from the following\n");
+  Console.WriteLine("Rock, Paper and Scissors")
 
   for (int rock = 5; int paper = 5; int scissors = 5)
   {
@@ -22,12 +26,20 @@ class Template {
       Console.WriteLine("Rock beats Scissors");
     }
     else if (scissors < paper)
-    
+    {
+      Console.WriteLine("Scissors beat Paper");
+    }
+    else if (playerChoice > CPUChoice)
+    {
+      Console.WriteLine("You Win");
+    }
+    else (playerChoice < CPUChoice)
+    {
+      Console.WriteLine("Computer Wins");
+    }
+
   }
 
-  str CPUChoice = ""
-  str NumChoices = ""
-  str PlayerChoice = ""
 
 
   }

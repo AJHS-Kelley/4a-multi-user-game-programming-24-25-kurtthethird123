@@ -8,8 +8,8 @@ class Template {
   string numChoices = "";
   string playerChoice = "";
   
-  int = playerPoints;
-  int = CPUPoints;
+  int playerPoints = 0;
+  int CPUPoints = 0;
 
   Console.WriteLine("Hello and welcome to the game!!!\n");
   Console.WriteLine("Please choose from the following\n");

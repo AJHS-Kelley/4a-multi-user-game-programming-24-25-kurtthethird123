@@ -3,7 +3,11 @@ using System;
 class Template {
   
   static void Main() {
-
+  
+  string rock = "";
+  string paper = "";
+  string scissors = "";
+  
   string CPUChoice = "";
   string numChoices = "";
   string playerChoice = "";
@@ -13,9 +17,9 @@ class Template {
 
   Console.WriteLine("Hello and welcome to the game!!!\n");
   Console.WriteLine("Please choose from the following\n");
-  Console.WriteLine("Rock, Paper and Scissors")
+  Console.WriteLine("Rock, Paper and Scissors\n");
 
-  for (int rock = 5; int paper = 5; int scissors = 5)
+  while (CPUPoints > 5 & playerPoints > 5 )
   {
     if (rock < paper)
     {

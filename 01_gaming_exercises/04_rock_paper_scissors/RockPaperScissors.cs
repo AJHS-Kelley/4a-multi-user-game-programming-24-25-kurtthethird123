@@ -18,8 +18,9 @@ class Template {
   Console.WriteLine("Hello and welcome to the game!!!\n");
   Console.WriteLine("Please choose from the following\n");
   Console.WriteLine("Rock, Paper and Scissors\n");
+  Console.Writeline("Now then. OPEN THE GAME!!\n");
 
-  while (CPUPoints > 5 & playerPoints > 5 )
+  while (CPUPoints < 5 & playerPoints < 5 )
   {
     if (rock < paper)
     {

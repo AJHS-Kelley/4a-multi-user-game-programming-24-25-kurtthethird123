@@ -16,16 +16,16 @@ class Template {
     Console.WriteLine("Please enter your combatent name\n");
     PlayerName = Console.ReadLine();
     Console.WriteLine("${PlayerName} Is your combatent name?\n");
-    bool isCorrect = Console.ReadLine().ToLower();
+    string isCorrect = Console.ReadLine().ToLower();
 
-    if (isCorrect = "yes")
+    if (isCorrect == "yes")
     {
        Console.WriteLine($"Welcome {PlayerName}. Your challenger awaits\n");
     }
-    else if (isCorrect = "no")
+    else if (isCorrect == "no")
     {
        Console.WriteLine("Please enter your combatent name\n");
-       PlayerName = Console.ReadLine();
+       PlayerName == Console.ReadLine();
     }
     else
     {
@@ -76,6 +76,7 @@ class Template {
         {
             Console.WriteLine("Opponent choice has not picked\n");
         }
+        Console.WriteLine("CPU Choice" + CPUChoice)
         
         // Compare the two choices and determine a winner
         if (PlayerChoice == "rock" && CPUChoice == "paper")
@@ -136,7 +137,7 @@ class Template {
     {
       Console.WriteLine("Congradulations you are the champion of The King Of Rock Paper Scissors Tournament!!\n");
     }
-    else (CPUPoints = 5)
+    else
     {
       Console.WriteLine("Your Oppenent has won The King Of Rock Paper Scissors Tournament\n");
     }

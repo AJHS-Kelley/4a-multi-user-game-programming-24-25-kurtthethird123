@@ -4,46 +4,21 @@ class Template {
 
   static void Main() {
     //PLAYER VARIABLE
-    string PlayerName = "Test Player";
     int PlayerScore = 0;
     string PlayerChoice = "";
+    int NumDraws = 0;
 
     // CPU VARIABLES
     int CPUScore = 0;
     string CPUChoice = "";
 
-    Console.WriteLine("Welcome to the King Of Rock Paper Scissors Tournament\n");
-    Console.WriteLine("Please enter your combatent name\n");
-    PlayerName = Console.ReadLine();
-    Console.WriteLine($"{PlayerName} Is your combatent name?\n");
-    string isCorrect = Console.ReadLine().ToLower();
+    // TESTING GAME LOOP
+    int LoopCount = 0;
+    int LoopReq = 0;
+    Console.WriteLine("How many loops do you need?\n Please type an integer and press enter.\n")
+    LoopReqs = Convert.ToInt32(Console.ReadLine());
 
-    if (isCorrect == "yes")
-    {
-       Console.WriteLine($"Welcome {PlayerName}. Your challenger awaits\n");
-    }
-    else if (isCorrect == "no")
-    {
-       Console.WriteLine("Please enter your combatent name\n");
-       PlayerName = Console.ReadLine();
-    }
-    else
-    {
-       Console.WriteLine("Unable to use answer please.  try again\n");
-    }
 
-    //Console.WriteLine("""
-     //It is a fierce foe to fight
-     //it is well skilled in the battle of Rock 
-     //Paper
-     //and Scissor
-     //But i believe you have the power to defeat it
-     //=============================================
-     //Rules of the Tournament 
-     //Choose Rock, Paper or Scissors as the only skills
-     //Any and every other style will lead to discualification
-     //You need Five wins to defeat your opponent
-     //============================================= """)
 
     while (PlayerScore < 5 && CPUScore < 5)
     {
@@ -60,6 +35,7 @@ class Template {
         }
         // Allow CPU to select randomly.
         Random rnd = new Random();
+
         int CPUrand = rnd.Next(1, 3);
 
         if (CPUrand == 1)
@@ -79,8 +55,13 @@ class Template {
           Console.WriteLine("Opponent choice has not picked\n");
         }
         Console.WriteLine("CPU Choice" + CPUChoice);
+
+        // Allow player to select randomly.
+        int PlayerRand = rnd.Next(1,3);
+        Console.WriteLine($"PlayerRand: {PlayerRand}\nCPURand: {CPURand}")
         
         // Compare the two choices and determine a winner
+        /*
         if (PlayerChoice == "rock" && CPUChoice == "paper")
         {
         Console.WriteLine($"You chose {PlayerChoice} and the CPU chose {CPUChoice}.\n");
@@ -132,8 +113,10 @@ class Template {
         Console.WriteLine("The CPU wins.\n");
         CPUScore++; 
         }
+        */
         
     }
+
     
     if (PlayerScore > CPUScore)
     {

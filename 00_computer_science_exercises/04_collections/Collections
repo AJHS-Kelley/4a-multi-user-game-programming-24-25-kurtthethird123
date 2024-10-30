@@ -27,7 +27,9 @@ class 04_Collections {
     Console.WriteLine("The elements of each array are:\n");
     Console.WriteLine("BreakfastFoods: \n" + String.Join(",", BreakfastFoods));
     Console.WriteLine(); // Print an empty line to the screen
-    
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("GPA: \n" + String.Join(",", GPA));
+    Console.WriteLine(); // Print an empty line to the screen
        
 
   } // Do not delete

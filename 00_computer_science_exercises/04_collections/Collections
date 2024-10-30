@@ -25,12 +25,31 @@ class 04_Collections {
 
     // PRINTING ARRAY CONTENTS -- ALL ELEMENTS ON SINGLE LINE
     Console.WriteLine("The elements of each array are:\n");
-    Console.WriteLine("BreakfastFoods: \n" + String.Join(",", BreakfastFoods));
+    Console.WriteLine("BreakfastFoods: \n" + String.Join("\n", BreakfastFoods));
     Console.WriteLine(); // Print an empty line to the screen
+
     Console.WriteLine("The elements of each array are:\n");
-    Console.WriteLine("GPA: \n" + String.Join(",", GPA));
+    Console.WriteLine("GPA: \n" + String.Join("\n", GPA));
     Console.WriteLine(); // Print an empty line to the screen
-       
+    
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("TestScores: \n" + String.Join("\n", testScores));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    // How long is my array? DETERMINING ARRAY LENGTH
+    Console.WriteLine("The length of the BreakfastFoods array is : " + BreakfastFoods.Length);
+
+    // .Length is known as PROPERTY of the arrey.
+    Console.WriteLine("The length of GPA array is : " + GPA.Length);
+    
+    // Accessing Elements in the array with the index.
+    Console.WriteLine("The first element in BreakfastFoods is: " + BreakfastFoods[0]);
+    // Print the 2nd Element of the GPA array.
+    Console.WriteLine("The first element in GPA is: " + GPA[0]);
+    // Print the 3rd Element of the testscores array.
+    Console.WriteLine("The first element in test scores is: " + testScores[0]);
+
+
 
   } // Do not delete
 }

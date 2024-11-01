@@ -19,16 +19,18 @@ class 04_Collections {
     */
     
     // DECLARING AND DEFINGING ARRAY
+    /*
     string[] BreakfastFoods = {"Pancakes", "Eggs", "Crasonnts", "Biscuts", "Beef Sausage links"}; 
     int[] testScores = {0, 15, 25, 75, 99};
     double[] GPA = {0.27D, 1.99D, 4.02D, 2.0D, 3.25D};
+    */
 
     /*
     // PRINTING ARRAY CONTENTS -- ALL ELEMENTS ON SINGLE LINE
     Console.WriteLine("The elements of each array are:\n");
     Console.WriteLine("BreakfastFoods: \n" + String.Join("\n", BreakfastFoods));
     Console.WriteLine(); // Print an empty line to the screen
-    /*
+
     Console.WriteLine("The elements of each array are:\n");
     Console.WriteLine("GPA: \n" + String.Join("\n", GPA));
     Console.WriteLine(); // Print an empty line to the screen
@@ -73,6 +75,31 @@ class 04_Collections {
 
     //testScores[0] = "99"; // Error Message "Cannot implicitly convert dataType to dataType"
     // Trying to put incorrect data type in the array.
+
+    // COMMON ARRAY METHODS -- Ways to work wuth the array data.
+    // Sorting an Array
+    int[] intArr = {-25, 50, 68, -1205, 999, -2, 66, 1, 124, 9};
+    string[] ZooAnimals = {"Lion", "Zebra", "Geraiph", "Unicorn", "Dolphens", "SeaOtter", "Raptors", "Flamingos", "Turtles", "Pikachu"};
+    
+    Array.Sort(intArr);
+    Array.Sort(ZooAnimals);
+    // Array Sort will sort string arrays ALPHABETICALLY A-Z and numerical arrays from LEAST TO GREATEST
+
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("ZooAnimals: \n" + String.Join("\n", ZooAnimals));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("intArr: \n" + String.Join("\n", intArr));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    // Finding the MIN, MAX, and SUM for numerical arrays.
+    Console.WriteLine("The MINIMUM value for intArr is: " + intArr.Min());
+    Console.WriteLine("The MAXIMUM value for intArr is: " + intArr.Max());
+    Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
+
+
+
 
 
 

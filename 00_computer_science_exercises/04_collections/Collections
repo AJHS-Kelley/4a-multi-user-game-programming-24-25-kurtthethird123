@@ -1,4 +1,4 @@
-// Collections Example, Tennell Curtis III, v0.0
+// Collections Example, Tennell Curtis III, v0.1
 using System;
 using System.Linq;
 using System.Collections;
@@ -17,17 +17,18 @@ class 04_Collections {
     -- POSITION OF THE ELEMENT IS CALLED THE INDEX.
     -- FIRST ELEMENT INDEX IS 0.
     */
-
+    
     // DECLARING AND DEFINGING ARRAY
     string[] BreakfastFoods = {"Pancakes", "Eggs", "Crasonnts", "Biscuts", "Beef Sausage links"}; 
     int[] testScores = {0, 15, 25, 75, 99};
     double[] GPA = {0.27D, 1.99D, 4.02D, 2.0D, 3.25D};
 
+    /*
     // PRINTING ARRAY CONTENTS -- ALL ELEMENTS ON SINGLE LINE
     Console.WriteLine("The elements of each array are:\n");
     Console.WriteLine("BreakfastFoods: \n" + String.Join("\n", BreakfastFoods));
     Console.WriteLine(); // Print an empty line to the screen
-
+    /*
     Console.WriteLine("The elements of each array are:\n");
     Console.WriteLine("GPA: \n" + String.Join("\n", GPA));
     Console.WriteLine(); // Print an empty line to the screen
@@ -48,6 +49,31 @@ class 04_Collections {
     Console.WriteLine("The first element in GPA is: " + GPA[0]);
     // Print the 3rd Element of the testscores array.
     Console.WriteLine("The first element in test scores is: " + testScores[0]);
+    */
+
+    /*
+    //Shortcut to access last item in an array
+    Console.WriteLine("The last element of BreakfastFoods is: " + BreakfastFoods[BreakfastFoods.Length - 1]);
+    Console.WriteLine("The last element of GPA is: " + GPA[GPA.Length - 1]);
+    Console.WriteLine("The last element of testScores is: " + testScores[testScores.Length - 1]);
+    */
+
+    // CHANGING ELEMENTS IN A ARRAY
+    /*
+    BreakfastFoods[2] = "Omlet";
+    testScores[0] = 88;
+    GPA[3] = 5.0D;
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("BreakfastFoods: \n" + String.Join("\n", BreakfastFoods));
+    Console.WriteLine(); // Print an empty line to the screen
+    */
+
+    // COMMON ERRORS WITH ARRAYS
+    // Console.WriteLine(BreakfastFoods[99]); // Index Out of Bounds -- Accessing index that does not exist in the array
+
+    //testScores[0] = "99"; // Error Message "Cannot implicitly convert dataType to dataType"
+    // Trying to put incorrect data type in the array.
+
 
 
 

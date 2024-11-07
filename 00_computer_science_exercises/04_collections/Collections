@@ -54,7 +54,7 @@ class 04_Collections {
     */
 
     /*
-    //Shortcut to access last item in an array
+    // Shortcut to access last item in an array
     Console.WriteLine("The last element of BreakfastFoods is: " + BreakfastFoods[BreakfastFoods.Length - 1]);
     Console.WriteLine("The last element of GPA is: " + GPA[GPA.Length - 1]);
     Console.WriteLine("The last element of testScores is: " + testScores[testScores.Length - 1]);
@@ -78,6 +78,7 @@ class 04_Collections {
 
     // COMMON ARRAY METHODS -- Ways to work wuth the array data.
     // Sorting an Array
+    /*
     int[] intArr = {-25, 50, 68, -1205, 999, -2, 66, 1, 124, 9};
     string[] ZooAnimals = {"Lion", "Zebra", "Geraiph", "Unicorn", "Dolphens", "SeaOtter", "Raptors", "Flamingos", "Turtles", "Pikachu"};
     
@@ -97,12 +98,82 @@ class 04_Collections {
     Console.WriteLine("The MINIMUM value for intArr is: " + intArr.Min());
     Console.WriteLine("The MAXIMUM value for intArr is: " + intArr.Max());
     Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
+    */
 
+    // ArrayList - Basically an array you can add/remove elements from
+    //var exampleArrList = new ArrayList(); // Create a new ArrayList
+    // Adding elements to an ArrayList use .Add()
+    /*
+    exampleArrList.Add(5);
+    exampleArrList.Add("X-men 2")
+    exampleArrList.Add(false);
+    exampleArrList.Add(1.25D);
+    */
 
+    // Create ArrayList with Values
+    /*
+    var exampleArrList2 = new ArrayList()
+    {
+      -10, "Last Name", "Purple", false, 25.25D, 195000, 0.0D
+    };
+    */
 
+  //Console.WriteLine(exampleArrList[2]);
+  //Console.WriteLine(exampleArrList2[5]);
 
+  // Inserting to a specific position in the Arraylist
+  // Use .Insert(index, value)
+  // exampleArrlist.Insert(3, "NigtCrawler.\n");
+  // exampleArrlist.Insert(0, -99);
+
+  // .Remove(value) removes the FIRST OCCURENCE of the item from the ArrayList.
+  /*
+  var newlist = ArrayList()
+  {
+    77, 88, 99, 55, 44, 66, 77, 33, 11, 
+  };
+  */
+
+  //Console.WriteLine(newList[0]);
+  //newList.Remove(-10);
+  //Console.WriteLine(newList[0]);
+
+  // Deleting based in index number
+  // .RemoveAt(value) -- deletes the item at the spectified index
+  //newList.RemoveAt(4);
+
+  // Delete the First Item
+  //newList.RemoveAt(0);
+
+  // Delete the Last Item
+  //newList.RemoveAt(newList.Length - 1);
+
+  // Remove an entire range of elements.
+  // .RemoveRange(FirstIndexToDelete, LastIndexToDelete)
+  //newList.RemoveRange(3,8)
+
+  // Shortcut to Delete from one item through end of the list
+  //newList.RemoveRange(4, newList.Length - 1);
+
+  // Does the ArrayList contain a certain value.
+  // .Contains(value) returns true if the list has that value, false otherwise
+  var playerInventory = new ArrayList()
+  {
+    "Sword", "Shield", "Bazooka", "1-Up Power-Up", "Death Notebook", "Potato"
+  };
+
+  Console.WriteLine(playerInventory.Contains("Fishing Pole"));
+  Console.WriteLine(playerInventory.Contains("Swords"));
+
+  if (playerInventory.Contains("blue key"));
+  {
+    // Do something
+  }
 
 
 
   } // Do not delete
-}
+}  
+
+
+

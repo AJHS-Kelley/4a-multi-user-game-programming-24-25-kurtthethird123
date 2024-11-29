@@ -1,0 +1,179 @@
+// Collections Example, Tennell Curtis III, v0.1
+using System;
+using System.Linq;
+using System.Collections;
+
+
+class 04_Collections {
+
+  static void Main() {
+
+    /*
+    In C# an collection is known as an ARRAY.
+    -- EACH ITEM IN THE ARRAY IS KNOWN AS AN ELEMENT.
+    -- NUMBER OF ELEMENTS IN THE ARRAY CANNOT BE CHANGED.
+    -- CONTENTS OF EACH ELEMENTS CAN CHANGE.
+    -- ARRAYS ARE ORDERED, MEANING EACH ITEM HAS A FIXED POSITION.
+    -- POSITION OF THE ELEMENT IS CALLED THE INDEX.
+    -- FIRST ELEMENT INDEX IS 0.
+    */
+    
+    // DECLARING AND DEFINGING ARRAY
+    /*
+    string[] BreakfastFoods = {"Pancakes", "Eggs", "Crasonnts", "Biscuts", "Beef Sausage links"}; 
+    int[] testScores = {0, 15, 25, 75, 99};
+    double[] GPA = {0.27D, 1.99D, 4.02D, 2.0D, 3.25D};
+    */
+
+    /*
+    // PRINTING ARRAY CONTENTS -- ALL ELEMENTS ON SINGLE LINE
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("BreakfastFoods: \n" + String.Join("\n", BreakfastFoods));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("GPA: \n" + String.Join("\n", GPA));
+    Console.WriteLine(); // Print an empty line to the screen
+    
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("TestScores: \n" + String.Join("\n", testScores));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    // How long is my array? DETERMINING ARRAY LENGTH
+    Console.WriteLine("The length of the BreakfastFoods array is : " + BreakfastFoods.Length);
+
+    // .Length is known as PROPERTY of the arrey.
+    Console.WriteLine("The length of GPA array is : " + GPA.Length);
+    
+    // Accessing Elements in the array with the index.
+    Console.WriteLine("The first element in BreakfastFoods is: " + BreakfastFoods[0]);
+    // Print the 2nd Element of the GPA array.
+    Console.WriteLine("The first element in GPA is: " + GPA[0]);
+    // Print the 3rd Element of the testscores array.
+    Console.WriteLine("The first element in test scores is: " + testScores[0]);
+    */
+
+    /*
+    // Shortcut to access last item in an array
+    Console.WriteLine("The last element of BreakfastFoods is: " + BreakfastFoods[BreakfastFoods.Length - 1]);
+    Console.WriteLine("The last element of GPA is: " + GPA[GPA.Length - 1]);
+    Console.WriteLine("The last element of testScores is: " + testScores[testScores.Length - 1]);
+    */
+
+    // CHANGING ELEMENTS IN A ARRAY
+    /*
+    BreakfastFoods[2] = "Omlet";
+    testScores[0] = 88;
+    GPA[3] = 5.0D;
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("BreakfastFoods: \n" + String.Join("\n", BreakfastFoods));
+    Console.WriteLine(); // Print an empty line to the screen
+    */
+
+    // COMMON ERRORS WITH ARRAYS
+    // Console.WriteLine(BreakfastFoods[99]); // Index Out of Bounds -- Accessing index that does not exist in the array
+
+    //testScores[0] = "99"; // Error Message "Cannot implicitly convert dataType to dataType"
+    // Trying to put incorrect data type in the array.
+
+    // COMMON ARRAY METHODS -- Ways to work wuth the array data.
+    // Sorting an Array
+    /*
+    int[] intArr = {-25, 50, 68, -1205, 999, -2, 66, 1, 124, 9};
+    string[] ZooAnimals = {"Lion", "Zebra", "Geraiph", "Unicorn", "Dolphens", "SeaOtter", "Raptors", "Flamingos", "Turtles", "Pikachu"};
+    
+    Array.Sort(intArr);
+    Array.Sort(ZooAnimals);
+    // Array Sort will sort string arrays ALPHABETICALLY A-Z and numerical arrays from LEAST TO GREATEST
+
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("ZooAnimals: \n" + String.Join("\n", ZooAnimals));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    Console.WriteLine("The elements of each array are:\n");
+    Console.WriteLine("intArr: \n" + String.Join("\n", intArr));
+    Console.WriteLine(); // Print an empty line to the screen
+
+    // Finding the MIN, MAX, and SUM for numerical arrays.
+    Console.WriteLine("The MINIMUM value for intArr is: " + intArr.Min());
+    Console.WriteLine("The MAXIMUM value for intArr is: " + intArr.Max());
+    Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
+    */
+
+    // ArrayList - Basically an array you can add/remove elements from
+    //var exampleArrList = new ArrayList(); // Create a new ArrayList
+    // Adding elements to an ArrayList use .Add()
+    /*
+    exampleArrList.Add(5);
+    exampleArrList.Add("X-men 2")
+    exampleArrList.Add(false);
+    exampleArrList.Add(1.25D);
+    */
+
+    // Create ArrayList with Values
+    /*
+    var exampleArrList2 = new ArrayList()
+    {
+      -10, "Last Name", "Purple", false, 25.25D, 195000, 0.0D
+    };
+    */
+
+  //Console.WriteLine(exampleArrList[2]);
+  //Console.WriteLine(exampleArrList2[5]);
+
+  // Inserting to a specific position in the Arraylist
+  // Use .Insert(index, value)
+  // exampleArrlist.Insert(3, "NigtCrawler.\n");
+  // exampleArrlist.Insert(0, -99);
+
+  // .Remove(value) removes the FIRST OCCURENCE of the item from the ArrayList.
+  /*
+  var newlist = ArrayList()
+  {
+    77, 88, 99, 55, 44, 66, 77, 33, 11, 
+  };
+  */
+
+  //Console.WriteLine(newList[0]);
+  //newList.Remove(-10);
+  //Console.WriteLine(newList[0]);
+
+  // Deleting based in index number
+  // .RemoveAt(value) -- deletes the item at the spectified index
+  //newList.RemoveAt(4);
+
+  // Delete the First Item
+  //newList.RemoveAt(0);
+
+  // Delete the Last Item
+  //newList.RemoveAt(newList.Length - 1);
+
+  // Remove an entire range of elements.
+  // .RemoveRange(FirstIndexToDelete, LastIndexToDelete)
+  //newList.RemoveRange(3,8)
+
+  // Shortcut to Delete from one item through end of the list
+  //newList.RemoveRange(4, newList.Length - 1);
+
+  // Does the ArrayList contain a certain value.
+  // .Contains(value) returns true if the list has that value, false otherwise
+  var playerInventory = new ArrayList()
+  {
+    "Sword", "Shield", "Bazooka", "1-Up Power-Up", "Death Notebook", "Potato"
+  };
+
+  Console.WriteLine(playerInventory.Contains("Fishing Pole"));
+  Console.WriteLine(playerInventory.Contains("Swords"));
+
+  if (playerInventory.Contains("blue key"));
+  {
+    // Do something
+  }
+
+
+
+  } // Do not delete
+}  
+
+
+
